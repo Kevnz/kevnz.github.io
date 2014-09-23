@@ -1,0 +1,1950 @@
+/*!
+Pure v0.5.0
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yui/pure/blob/master/LICENSE.md
+*/
+/*!
+normalize.css v1.1.3 | MIT License | git.io/normalize
+Copyright (c) Nicolas Gallagher and Jonathan Neal
+*/
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*csslint important:false*/
+
+/* ==========================================================================
+   Pure Base Extras
+   ========================================================================== */
+
+/**
+ * Extra rules that Pure adds on top of Normalize.css
+ */
+
+/**
+ * Always hide an element when it has the `hidden` HTML attribute.
+ */
+
+[hidden] {
+    display: none !important;
+}
+
+/**
+ * Add this class to an image to make it fit within it's fluid parent wrapper while maintaining
+ * aspect ratio.
+ */
+.kev-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
+
+.kev-g {
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yui/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.kev-g {
+    word-spacing: -0.43em;
+}
+
+.kev-u {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+.kev-g [class *= "kev-u"] {
+    font-family: sans-serif;
+}
+
+.kev-u-1,
+.kev-u-1-1,
+.kev-u-1-2,
+.kev-u-1-3,
+.kev-u-2-3,
+.kev-u-1-4,
+.kev-u-3-4,
+.kev-u-1-5,
+.kev-u-2-5,
+.kev-u-3-5,
+.kev-u-4-5,
+.kev-u-5-5,
+.kev-u-1-6,
+.kev-u-5-6,
+.kev-u-1-8,
+.kev-u-3-8,
+.kev-u-5-8,
+.kev-u-7-8,
+.kev-u-1-12,
+.kev-u-5-12,
+.kev-u-7-12,
+.kev-u-11-12,
+.kev-u-1-24,
+.kev-u-2-24,
+.kev-u-3-24,
+.kev-u-4-24,
+.kev-u-5-24,
+.kev-u-6-24,
+.kev-u-7-24,
+.kev-u-8-24,
+.kev-u-9-24,
+.kev-u-10-24,
+.kev-u-11-24,
+.kev-u-12-24,
+.kev-u-13-24,
+.kev-u-14-24,
+.kev-u-15-24,
+.kev-u-16-24,
+.kev-u-17-24,
+.kev-u-18-24,
+.kev-u-19-24,
+.kev-u-20-24,
+.kev-u-21-24,
+.kev-u-22-24,
+.kev-u-23-24,
+.kev-u-24-24 {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.kev-u-1-24 {
+    width: 4.1667%;
+    *width: 4.1357%;
+}
+
+.kev-u-1-12,
+.kev-u-2-24 {
+    width: 8.3333%;
+    *width: 8.3023%;
+}
+
+.kev-u-1-8,
+.kev-u-3-24 {
+    width: 12.5000%;
+    *width: 12.4690%;
+}
+
+.kev-u-1-6,
+.kev-u-4-24 {
+    width: 16.6667%;
+    *width: 16.6357%;
+}
+
+.kev-u-1-5 {
+    width: 20%;
+    *width: 19.9690%;
+}
+
+.kev-u-5-24 {
+    width: 20.8333%;
+    *width: 20.8023%;
+}
+
+.kev-u-1-4,
+.kev-u-6-24 {
+    width: 25%;
+    *width: 24.9690%;
+}
+
+.kev-u-7-24 {
+    width: 29.1667%;
+    *width: 29.1357%;
+}
+
+.kev-u-1-3,
+.kev-u-8-24 {
+    width: 33.3333%;
+    *width: 33.3023%;
+}
+
+.kev-u-3-8,
+.kev-u-9-24 {
+    width: 37.5000%;
+    *width: 37.4690%;
+}
+
+.kev-u-2-5 {
+    width: 40%;
+    *width: 39.9690%;
+}
+
+.kev-u-5-12,
+.kev-u-10-24 {
+    width: 41.6667%;
+    *width: 41.6357%;
+}
+
+.kev-u-11-24 {
+    width: 45.8333%;
+    *width: 45.8023%;
+}
+
+.kev-u-1-2,
+.kev-u-12-24 {
+    width: 50%;
+    *width: 49.9690%;
+}
+
+.kev-u-13-24 {
+    width: 54.1667%;
+    *width: 54.1357%;
+}
+
+.kev-u-7-12,
+.kev-u-14-24 {
+    width: 58.3333%;
+    *width: 58.3023%;
+}
+
+.kev-u-3-5 {
+    width: 60%;
+    *width: 59.9690%;
+}
+
+.kev-u-5-8,
+.kev-u-15-24 {
+    width: 62.5000%;
+    *width: 62.4690%;
+}
+
+.kev-u-2-3,
+.kev-u-16-24 {
+    width: 66.6667%;
+    *width: 66.6357%;
+}
+
+.kev-u-17-24 {
+    width: 70.8333%;
+    *width: 70.8023%;
+}
+
+.kev-u-3-4,
+.kev-u-18-24 {
+    width: 75%;
+    *width: 74.9690%;
+}
+
+.kev-u-19-24 {
+    width: 79.1667%;
+    *width: 79.1357%;
+}
+
+.kev-u-4-5 {
+    width: 80%;
+    *width: 79.9690%;
+}
+
+.kev-u-5-6,
+.kev-u-20-24 {
+    width: 83.3333%;
+    *width: 83.3023%;
+}
+
+.kev-u-7-8,
+.kev-u-21-24 {
+    width: 87.5000%;
+    *width: 87.4690%;
+}
+
+.kev-u-11-12,
+.kev-u-22-24 {
+    width: 91.6667%;
+    *width: 91.6357%;
+}
+
+.kev-u-23-24 {
+    width: 95.8333%;
+    *width: 95.8023%;
+}
+
+.kev-u-1,
+.kev-u-1-1,
+.kev-u-5-5,
+.kev-u-24-24 {
+    width: 100%;
+}
+.kev-button {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.kev-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*csslint outline-none:false*/
+
+.kev-button {
+    font-family: inherit;
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    *color: #444; /* IE 6 & 7 */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.kev-button-hover,
+.kev-button:hover,
+.kev-button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.kev-button:focus {
+    outline: 0;
+}
+.kev-button-active,
+.kev-button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+
+.kev-button[disabled],
+.kev-button-disabled,
+.kev-button-disabled:hover,
+.kev-button-disabled:focus,
+.kev-button-disabled:active {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.kev-button-hidden {
+    display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.kev-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+.kev-button-primary,
+.kev-button-selected,
+a.kev-button-primary,
+a.kev-button-selected {
+    background-color: rgb(0, 120, 231);
+    color: #fff;
+}
+
+.kev-form input[type="text"],
+.kev-form input[type="password"],
+.kev-form input[type="email"],
+.kev-form input[type="url"],
+.kev-form input[type="date"],
+.kev-form input[type="month"],
+.kev-form input[type="time"],
+.kev-form input[type="datetime"],
+.kev-form input[type="datetime-local"],
+.kev-form input[type="week"],
+.kev-form input[type="number"],
+.kev-form input[type="search"],
+.kev-form input[type="tel"],
+.kev-form input[type="color"],
+.kev-form select,
+.kev-form textarea {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.kev-form input:not([type]) {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
+/* May be able to remove this tweak as color inputs become more standardized across browsers. */
+.kev-form input[type="color"] {
+    padding: 0.2em 0.5em;
+}
+
+
+.kev-form input[type="text"]:focus,
+.kev-form input[type="password"]:focus,
+.kev-form input[type="email"]:focus,
+.kev-form input[type="url"]:focus,
+.kev-form input[type="date"]:focus,
+.kev-form input[type="month"]:focus,
+.kev-form input[type="time"]:focus,
+.kev-form input[type="datetime"]:focus,
+.kev-form input[type="datetime-local"]:focus,
+.kev-form input[type="week"]:focus,
+.kev-form input[type="number"]:focus,
+.kev-form input[type="search"]:focus,
+.kev-form input[type="tel"]:focus,
+.kev-form input[type="color"]:focus,
+.kev-form select:focus,
+.kev-form textarea:focus {
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    border-color: #129FEA;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.kev-form input:not([type]):focus {
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    border-color: #129FEA;
+}
+
+.kev-form input[type="file"]:focus,
+.kev-form input[type="radio"]:focus,
+.kev-form input[type="checkbox"]:focus {
+    outline: thin dotted #333;
+    outline: 1px auto #129FEA;
+}
+.kev-form .kev-checkbox,
+.kev-form .kev-radio {
+    margin: 0.5em 0;
+    display: block;
+}
+
+.kev-form input[type="text"][disabled],
+.kev-form input[type="password"][disabled],
+.kev-form input[type="email"][disabled],
+.kev-form input[type="url"][disabled],
+.kev-form input[type="date"][disabled],
+.kev-form input[type="month"][disabled],
+.kev-form input[type="time"][disabled],
+.kev-form input[type="datetime"][disabled],
+.kev-form input[type="datetime-local"][disabled],
+.kev-form input[type="week"][disabled],
+.kev-form input[type="number"][disabled],
+.kev-form input[type="search"][disabled],
+.kev-form input[type="tel"][disabled],
+.kev-form input[type="color"][disabled],
+.kev-form select[disabled],
+.kev-form textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.kev-form input:not([type])[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}
+.kev-form input[readonly],
+.kev-form select[readonly],
+.kev-form textarea[readonly] {
+    background: #eee; /* menu hover bg color */
+    color: #777; /* menu text color */
+    border-color: #ccc;
+}
+
+.kev-form input:focus:invalid,
+.kev-form textarea:focus:invalid,
+.kev-form select:focus:invalid {
+    color: #b94a48;
+    border-color: #ee5f5b;
+}
+.kev-form input:focus:invalid:focus,
+.kev-form textarea:focus:invalid:focus,
+.kev-form select:focus:invalid:focus {
+    border-color: #e9322d;
+}
+.kev-form input[type="file"]:focus:invalid:focus,
+.kev-form input[type="radio"]:focus:invalid:focus,
+.kev-form input[type="checkbox"]:focus:invalid:focus {
+    outline-color: #e9322d;
+}
+.kev-form select {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.kev-form select[multiple] {
+    height: auto;
+}
+.kev-form label {
+    margin: 0.5em 0 0.2em;
+}
+.kev-form fieldset {
+    margin: 0;
+    padding: 0.35em 0 0.75em;
+    border: 0;
+}
+.kev-form legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.kev-form-stacked input[type="text"],
+.kev-form-stacked input[type="password"],
+.kev-form-stacked input[type="email"],
+.kev-form-stacked input[type="url"],
+.kev-form-stacked input[type="date"],
+.kev-form-stacked input[type="month"],
+.kev-form-stacked input[type="time"],
+.kev-form-stacked input[type="datetime"],
+.kev-form-stacked input[type="datetime-local"],
+.kev-form-stacked input[type="week"],
+.kev-form-stacked input[type="number"],
+.kev-form-stacked input[type="search"],
+.kev-form-stacked input[type="tel"],
+.kev-form-stacked input[type="color"],
+.kev-form-stacked select,
+.kev-form-stacked label,
+.kev-form-stacked textarea {
+    display: block;
+    margin: 0.25em 0;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.kev-form-stacked input:not([type]) {
+    display: block;
+    margin: 0.25em 0;
+}
+.kev-form-aligned input,
+.kev-form-aligned textarea,
+.kev-form-aligned select,
+/* NOTE: kev-help-inline is deprecated. Use .kev-form-message-inline instead. */
+.kev-form-aligned .kev-help-inline,
+.kev-form-message-inline {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+.kev-form-aligned textarea {
+    vertical-align: top;
+}
+
+/* Aligned Forms */
+.kev-form-aligned .kev-control-group {
+    margin-bottom: 0.5em;
+}
+.kev-form-aligned .kev-control-group label {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10em;
+    margin: 0 1em 0 0;
+}
+.kev-form-aligned .kev-controls {
+    margin: 1.5em 0 0 10em;
+}
+
+/* Rounded Inputs */
+.kev-form input.kev-input-rounded,
+.kev-form .kev-input-rounded {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+}
+
+/* Grouped Inputs */
+.kev-form .kev-group fieldset {
+    margin-bottom: 10px;
+}
+.kev-form .kev-group input {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+    top: -1px;
+}
+.kev-form .kev-group input:focus {
+    z-index: 2;
+}
+.kev-form .kev-group input:first-child {
+    top: 1px;
+    border-radius: 4px 4px 0 0;
+}
+.kev-form .kev-group input:last-child {
+    top: -2px;
+    border-radius: 0 0 4px 4px;
+}
+.kev-form .kev-group button {
+    margin: 0.35em 0;
+}
+
+.kev-form .kev-input-1 {
+    width: 100%;
+}
+.kev-form .kev-input-2-3 {
+    width: 66%;
+}
+.kev-form .kev-input-1-2 {
+    width: 50%;
+}
+.kev-form .kev-input-1-3 {
+    width: 33%;
+}
+.kev-form .kev-input-1-4 {
+    width: 25%;
+}
+
+/* Inline help for forms */
+/* NOTE: kev-help-inline is deprecated. Use .kev-form-message-inline instead. */
+.kev-form .kev-help-inline,
+.kev-form-message-inline {
+    display: inline-block;
+    padding-left: 0.3em;
+    color: #666;
+    vertical-align: middle;
+    font-size: 0.875em;
+}
+
+/* Block help for forms */
+.kev-form-message {
+    display: block;
+    color: #666;
+    font-size: 0.875em;
+}
+
+@media only screen and (max-width : 480px) {
+    .kev-form button[type="submit"] {
+        margin: 0.7em 0 0;
+    }
+
+    .kev-form input:not([type]),
+    .kev-form input[type="text"],
+    .kev-form input[type="password"],
+    .kev-form input[type="email"],
+    .kev-form input[type="url"],
+    .kev-form input[type="date"],
+    .kev-form input[type="month"],
+    .kev-form input[type="time"],
+    .kev-form input[type="datetime"],
+    .kev-form input[type="datetime-local"],
+    .kev-form input[type="week"],
+    .kev-form input[type="number"],
+    .kev-form input[type="search"],
+    .kev-form input[type="tel"],
+    .kev-form input[type="color"],
+    .kev-form label {
+        margin-bottom: 0.3em;
+        display: block;
+    }
+
+    .kev-group input:not([type]),
+    .kev-group input[type="text"],
+    .kev-group input[type="password"],
+    .kev-group input[type="email"],
+    .kev-group input[type="url"],
+    .kev-group input[type="date"],
+    .kev-group input[type="month"],
+    .kev-group input[type="time"],
+    .kev-group input[type="datetime"],
+    .kev-group input[type="datetime-local"],
+    .kev-group input[type="week"],
+    .kev-group input[type="number"],
+    .kev-group input[type="search"],
+    .kev-group input[type="tel"],
+    .kev-group input[type="color"] {
+        margin-bottom: 0;
+    }
+
+    .kev-form-aligned .kev-control-group label {
+        margin-bottom: 0.3em;
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    .kev-form-aligned .kev-controls {
+        margin: 1.5em 0 0 0;
+    }
+
+    /* NOTE: kev-help-inline is deprecated. Use .kev-form-message-inline instead. */
+    .kev-form .kev-help-inline,
+    .kev-form-message-inline,
+    .kev-form-message {
+        display: block;
+        font-size: 0.75em;
+        /* Increased bottom padding to make it group with its related input element. */
+        padding: 0.2em 0 0.8em;
+    }
+}
+
+/*csslint adjoining-classes:false, outline-none:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+.kev-menu ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.kev-menu.kev-menu-open {
+    visibility: visible;
+    z-index: 2;
+    width: 100%;
+}
+
+.kev-menu ul {
+    left: -10000px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: -10000px;
+    z-index: 1;
+}
+
+.kev-menu > ul { position: relative; }
+
+.kev-menu-open > ul {
+    left: 0;
+    top: 0;
+    visibility: visible;
+}
+
+.kev-menu-open > ul:focus {
+    outline: 0;
+}
+
+.kev-menu li { position: relative; }
+
+.kev-menu a,
+.kev-menu .kev-menu-heading {
+    display: block;
+    color: inherit;
+    line-height: 1.5em;
+    padding: 5px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.kev-menu.kev-menu-horizontal > .kev-menu-heading {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0;
+    vertical-align: middle;
+}
+.kev-menu.kev-menu-horizontal > ul {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.kev-menu li a { padding: 5px 20px; }
+
+.kev-menu-can-have-children > .kev-menu-label:after {
+    content: '\25B8';
+    float: right;
+    /* These specific fonts have the Unicode char we need. */
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+    margin-right: -20px;
+    margin-top: -1px;
+}
+
+.kev-menu-can-have-children > .kev-menu-label {
+    padding-right: 30px;
+}
+
+.kev-menu-separator {
+    background-color: #dfdfdf;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    margin: 7px 2px;
+    overflow: hidden;
+}
+
+.kev-menu-hidden {
+    display: none;
+}
+
+/* FIXED MENU */
+.kev-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* HORIZONTAL MENU CODE */
+
+/* Initial menus should be inline-block so that they are horizontal */
+.kev-menu-horizontal li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+/* Submenus should still be display: block; */
+.kev-menu-horizontal li li {
+    display: block;
+}
+
+/* Content after should be down arrow */
+.kev-menu-horizontal > .kev-menu-children > .kev-menu-can-have-children > .kev-menu-label:after {
+    content: "\25BE";
+}
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+.kev-menu-horizontal > .kev-menu-children > .kev-menu-can-have-children > .kev-menu-label {
+    padding-right: 30px;
+}
+
+/* Adjusting separator for vertical menus */
+.kev-menu-horizontal li.kev-menu-separator {
+    height: 50%;
+    width: 1px;
+    margin: 0 7px;
+}
+
+/* Submenus should be horizontal separator again */
+.kev-menu-horizontal li li.kev-menu-separator {
+    height: 1px;
+    width: auto;
+    margin: 7px 2px;
+}
+
+
+/*csslint adjoining-classes:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+/* MAIN MENU STYLING */
+
+.kev-menu.kev-menu-open,
+.kev-menu.kev-menu-horizontal li .kev-menu-children {
+    background: #fff; /* Old browsers */
+    border: 1px solid #b7b7b7;
+}
+
+/* remove borders for horizontal menus */
+.kev-menu.kev-menu-horizontal,
+.kev-menu.kev-menu-horizontal .kev-menu-heading {
+    border: none;
+}
+
+
+/* LINK STYLES */
+
+.kev-menu a {
+    border: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+
+}
+
+.kev-menu a,
+.kev-menu .kev-menu-can-have-children > li:after {
+    color: #777;
+}
+
+.kev-menu .kev-menu-can-have-children > li:hover:after {
+    color: #fff;
+}
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+.kev-menu .kev-menu-open {
+    background: #dedede;
+}
+
+
+.kev-menu li a:hover,
+.kev-menu li a:focus {
+    background: #eee;
+}
+
+/* DISABLED STATES */
+.kev-menu li.kev-menu-disabled a:hover,
+.kev-menu li.kev-menu-disabled a:focus {
+    background: #fff;
+    color: #bfbfbf;
+}
+
+.kev-menu .kev-menu-disabled > a {
+    background-image: none;
+    border-color: transparent;
+    cursor: default;
+}
+
+.kev-menu .kev-menu-disabled > a,
+.kev-menu .kev-menu-can-have-children.kev-menu-disabled > a:after {
+    color: #bfbfbf;
+}
+
+/* HEADINGS */
+.kev-menu .kev-menu-heading {
+    color: #565d64;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-top: 0.5em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #dfdfdf;
+}
+
+/* ACTIVE MENU ITEM */
+.kev-menu .kev-menu-selected a {
+    color: #000;
+}
+
+/* FIXED MENU */
+.kev-menu.kev-menu-open.kev-menu-fixed {
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+/*csslint box-model:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+
+.kev-paginator {
+
+    /* `kev-g` Grid styles */
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+
+    /* `kev-paginator` Specific styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.opera-only :-o-prefocus,
+.kev-paginator {
+    word-spacing: -0.43em;
+}
+
+/* `kev-u` Grid styles */
+.kev-paginator li {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+
+.kev-paginator .kev-button {
+    border-radius: 0;
+    padding: 0.8em 1.4em;
+    vertical-align: top;
+    height: 1.1em;
+}
+.kev-paginator .kev-button:focus,
+.kev-paginator .kev-button:active {
+    outline-style: none;
+}
+.kev-paginator .prev,
+.kev-paginator .next {
+    color: #C0C1C3;
+    text-shadow: 0 -1px 0 rgba(0,0,0, 0.45);
+}
+.kev-paginator .prev {
+    border-radius: 2px 0 0 2px;
+}
+.kev-paginator .next {
+    border-radius: 0 2px 2px 0;
+}
+
+@media (max-width: 480px) {
+    .kev-menu-horizontal {
+        width: 100%;
+    }
+
+    .kev-menu-children li {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+}
+
+.kev-table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+
+.kev-table caption {
+    color: #000;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.kev-table td,
+.kev-table th {
+    border-left: 1px solid #cbcbcb;/*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.5em 1em; /* cell padding */
+}
+.kev-table td:first-child,
+.kev-table th:first-child {
+    border-left-width: 0;
+}
+
+.kev-table thead {
+    background: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+.kev-table td {
+    background-color: transparent;
+}
+.kev-table-odd td {
+    background-color: #f2f2f2;
+}
+
+/* nth-child selector for modern browsers */
+.kev-table-striped tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+}
+
+/* BORDERED TABLES */
+.kev-table-bordered td {
+    border-bottom: 1px solid #cbcbcb;
+}
+.kev-table-bordered tbody > tr:last-child td,
+.kev-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+
+/* HORIZONTAL BORDERED TABLES */
+
+.kev-table-horizontal td,
+.kev-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.kev-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+
+
+/* LAYOUT STUFF */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.kev-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+
+
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+.kev-form label {
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.kev-form input[type] {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/*
+ * -- PURE BUTTON STYLES --
+ * I want my kev-button elements to look a little different
+ */
+.kev-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+a.kev-button-primary {
+    background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .kev-menu looks at the top of the page
+ */
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu.kev-menu-open {
+    background: #2d3e50;
+}
+.kev-menu.kev-menu-open.kev-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .kev-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .kev-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+    background: #1f8dd6;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+
+}
+
+/* This is the class used for the main content headers (<h2>) */
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+/* This is a modifier class used when the content-head is inside a ribbon */
+.content-head-ribbon {
+    color: white;
+}
+
+/* This is the class used for the content sub-headers (<h3>) */
+.content-subhead {
+    color: #1f8dd6;
+}
+    .content-subhead i {
+        margin-right: 7px;
+    }
+
+/* This is the class used for the dark-background areas. */
+.ribbon {
+    background: #2d3e50;
+    color: #aaa;
+}
+
+/* This is the class used for the footer */
+.footer {
+    background: #111;
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 48em) {
+
+    /* We increase the body font size */
+    body {
+        font-size: 16px;
+    }
+    /* We want to give the content area some more padding */
+    .content {
+        padding: 1em;
+    }
+
+    /* We can align the menu header to the left, but float the
+    menu items to the right. */
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+
+    /* We increase the height of the splash-container */
+/*    .splash-container {
+        height: 500px;
+    }*/
+
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+
+    .splash-head {
+        font-size: 250%;
+    }
+
+
+    /* We remove the border-separator assigned to .l-box-lrg */
+    .l-box-lrg {
+        border: none;
+    }
+
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+@media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .splash-head {
+        font-size: 300%;
+    }
+}
