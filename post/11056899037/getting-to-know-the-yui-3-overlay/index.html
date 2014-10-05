@@ -7,9 +7,9 @@
 
     <title>Kevin Isom &ndash; </title>
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
-    <link rel="stylesheet" href="css/layouts/blog.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/grids-responsive.css">
+    <link rel="stylesheet" href="/css/blog.css">
 </head>
 <body>
 
@@ -36,12 +36,12 @@
         <div>
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
-                <h1 class="content-subhead">Pinned Post</h1>
+                <h1 class="content-subhead">Most Recent Post</h1>
 
                 <!-- A single blog post -->
                 <section class="post">
                     <header class="post-header">
-                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="img/common/kevin-avatar.png">
+                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="/img/kevin-avatar.png">
 
                         <h2 class="post-title">Getting to know the YUI 3 Overlay</h2>
 
@@ -51,27 +51,27 @@
                     </header>
 
                     <div class="post-description">
-                        &lt;p&gt;I am a &lt;strike&gt;big&lt;/strike&gt; huge fan of the &lt;a title=&quot;The YUI Library home page.&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/&quot;&gt;YUI Framework&lt;/a&gt;. Now YUI is full of awesomeness. One of the most awesome widgets is the Overlay and that&amp;#8217;s what this post is all about.&lt;/p&gt;
-&lt;h3&gt;YUI Widgets&lt;/h3&gt;
-&lt;p&gt;One of the foundations of YUI is the &lt;a title=&quot;YUI Widget Getting Started Guide&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/yui/docs/widget/&quot;&gt;Widget&lt;/a&gt; class, and the Overlay extends the Widget. In fact the Overlay is only &lt;a title=&quot;The YUI Overlay source code&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/yui/docs/api/files/overlay_js_Overlay.js.html#l9&quot;&gt;one line of JavaScript&lt;/a&gt;. In fact that one line starts to show off some of the awesomeness of YUI and how you can use YUI to &lt;a title=&quot;Composition over inheritance&quot; target=&quot;_blank&quot; href=&quot;http://en.wikipedia.org/wiki/Composition_over_inheritance&quot;&gt;compose&lt;/a&gt; useful controls without having to have thousands of lines of code.&lt;/p&gt;
-&lt;h3&gt;Setting up an Overlay.&lt;/h3&gt;
-&lt;p&gt;This first &lt;a title=&quot;Simple Overlay Sample at JSFiddle.net&quot; target=&quot;_blank&quot; href=&quot;http://jsfiddle.net/kev_nz/CWBJy/&quot;&gt;JSFiddle&lt;/a&gt; below shows an overlay being constructed and it&amp;#8217;s contents filled by the srcNode, it&amp;#8217;s width set to 300px, and render being set to true tells YUI to render it into the dom.&lt;/p&gt;
-&lt;p&gt;&lt;iframe src=&quot;http://jsfiddle.net/kev_nz/CWBJy/embedded/&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;h3&gt;Next Steps&lt;/h3&gt;
-&lt;p&gt;Now I&amp;#8217;m sure you&amp;#8217;re thinking that&amp;#8217;s not very interesting. And it&amp;#8217;s not, however by setting a few additional properties and applying some additional css hopefully I can show just how useful it can be.&lt;/p&gt;
-&lt;p&gt;In this example the overlay uses the centered and constrain attributes to show over the div simulating an ajax request while the content is swapped out. The centered attribute centers the widget in the viewport, or if a Node is passed (as in this instance) in, it will be centered to that node. The constrain attribute sets the node to constrain the widget&amp;#8217;s bounding box to.&lt;/p&gt;
-&lt;p&gt;Lastly using the &lt;a title=&quot;YUI 3 Plugin Guide&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/yui/docs/plugin/&quot;&gt;plugin functionality&lt;/a&gt; that YUI exposes adds animation for showing and hiding the overlay. The &lt;a title=&quot;Animation Example Plugin&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/yui/docs/overlay/overlay-anim-plugin.html&quot;&gt;Animation Plugin example&lt;/a&gt; shows how something like that is made.&lt;/p&gt;
-&lt;p&gt;&lt;iframe src=&quot;http://jsfiddle.net/kev_nz/KsXzF/embedded/&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;h3&gt;For Tooltips&lt;/h3&gt;
-&lt;p&gt;In this sample by setting the align property and some css (inspired by &lt;a title=&quot;CSS Arrows and Shapes Without Markup&quot; target=&quot;_blank&quot; href=&quot;http://www.yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/&quot;&gt;this blog post&lt;/a&gt; on it) you can achieve some nice looking (well relative in this example, the colors are a little rough) tooltip with very little code. A much easier to manage option instead of bringing in a library you have no control over just for tool tips.&lt;/p&gt;
-&lt;p&gt;The align attribute is used to align a reference point on the widget, with the reference point on another Node, or the viewport. The attribute takes a node as the first argument followed by an array of points. The &lt;a title=&quot;WidgetPositionAlign Class&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/yui/docs/api/classes/WidgetPositionAlign.html&quot;&gt;WidgetPositionAlign&lt;/a&gt; class has &lt;a title=&quot;Properties of the WidgetPositionAlign Class&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/yui/docs/api/classes/WidgetPositionAlign.html#properties&quot;&gt;constants&lt;/a&gt; defined for this. &lt;/p&gt;
-&lt;p&gt;&lt;iframe src=&quot;http://jsfiddle.net/kev_nz/A7tjY/embedded/&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;h3&gt;Extending from the Gallery&lt;/h3&gt;
-&lt;p&gt;The &lt;a title=&quot;The YUI Gallery&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/gallery/show&quot;&gt;YUI Gallery&lt;/a&gt; has some great &lt;a title=&quot;Overlay Extras at the YUI Gallery&quot; target=&quot;_blank&quot; href=&quot;http://yuilibrary.com/gallery/show/overlay-extras&quot;&gt;plugins for the overlay&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;In Conclusion&lt;/h3&gt;
-&lt;p&gt;I hope this has helped show how useful and versatile the overlay control is. As I mentioned when I started, I think the Overlay is a great example of just how powerful YUI is. After all the overlay is 1 line of code&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Y.Overlay = Y.Base.create(&quot;overlay&quot;, Y.Widget, [Y.WidgetStdMod, Y.WidgetPosition, Y.WidgetStack, Y.WidgetPositionAlign, Y.WidgetPositionConstrain]);&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;That&amp;#8217;s it, simply &lt;a title=&quot;Wikipedia definition of Mixin&quot; target=&quot;_blank&quot; href=&quot;http://en.wikipedia.org/wiki/Mixin&quot;&gt;mixing in&lt;/a&gt; a number of different small classes you can get a lot of functionality&lt;/p&gt;
+                        <p>I am a <strike>big</strike> huge fan of the <a title="The YUI Library home page." target="_blank" href="http://yuilibrary.com/">YUI Framework</a>. Now YUI is full of awesomeness. One of the most awesome widgets is the Overlay and that&#8217;s what this post is all about.</p>
+<h3>YUI Widgets</h3>
+<p>One of the foundations of YUI is the <a title="YUI Widget Getting Started Guide" target="_blank" href="http://yuilibrary.com/yui/docs/widget/">Widget</a> class, and the Overlay extends the Widget. In fact the Overlay is only <a title="The YUI Overlay source code" target="_blank" href="http://yuilibrary.com/yui/docs/api/files/overlay_js_Overlay.js.html#l9">one line of JavaScript</a>. In fact that one line starts to show off some of the awesomeness of YUI and how you can use YUI to <a title="Composition over inheritance" target="_blank" href="http://en.wikipedia.org/wiki/Composition_over_inheritance">compose</a> useful controls without having to have thousands of lines of code.</p>
+<h3>Setting up an Overlay.</h3>
+<p>This first <a title="Simple Overlay Sample at JSFiddle.net" target="_blank" href="http://jsfiddle.net/kev_nz/CWBJy/">JSFiddle</a> below shows an overlay being constructed and it&#8217;s contents filled by the srcNode, it&#8217;s width set to 300px, and render being set to true tells YUI to render it into the dom.</p>
+<p><iframe src="http://jsfiddle.net/kev_nz/CWBJy/embedded/"></iframe></p>
+<h3>Next Steps</h3>
+<p>Now I&#8217;m sure you&#8217;re thinking that&#8217;s not very interesting. And it&#8217;s not, however by setting a few additional properties and applying some additional css hopefully I can show just how useful it can be.</p>
+<p>In this example the overlay uses the centered and constrain attributes to show over the div simulating an ajax request while the content is swapped out. The centered attribute centers the widget in the viewport, or if a Node is passed (as in this instance) in, it will be centered to that node. The constrain attribute sets the node to constrain the widget&#8217;s bounding box to.</p>
+<p>Lastly using the <a title="YUI 3 Plugin Guide" target="_blank" href="http://yuilibrary.com/yui/docs/plugin/">plugin functionality</a> that YUI exposes adds animation for showing and hiding the overlay. The <a title="Animation Example Plugin" target="_blank" href="http://yuilibrary.com/yui/docs/overlay/overlay-anim-plugin.html">Animation Plugin example</a> shows how something like that is made.</p>
+<p><iframe src="http://jsfiddle.net/kev_nz/KsXzF/embedded/"></iframe></p>
+<h3>For Tooltips</h3>
+<p>In this sample by setting the align property and some css (inspired by <a title="CSS Arrows and Shapes Without Markup" target="_blank" href="http://www.yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/">this blog post</a> on it) you can achieve some nice looking (well relative in this example, the colors are a little rough) tooltip with very little code. A much easier to manage option instead of bringing in a library you have no control over just for tool tips.</p>
+<p>The align attribute is used to align a reference point on the widget, with the reference point on another Node, or the viewport. The attribute takes a node as the first argument followed by an array of points. The <a title="WidgetPositionAlign Class" target="_blank" href="http://yuilibrary.com/yui/docs/api/classes/WidgetPositionAlign.html">WidgetPositionAlign</a> class has <a title="Properties of the WidgetPositionAlign Class" target="_blank" href="http://yuilibrary.com/yui/docs/api/classes/WidgetPositionAlign.html#properties">constants</a> defined for this. </p>
+<p><iframe src="http://jsfiddle.net/kev_nz/A7tjY/embedded/"></iframe></p>
+<h3>Extending from the Gallery</h3>
+<p>The <a title="The YUI Gallery" target="_blank" href="http://yuilibrary.com/gallery/show">YUI Gallery</a> has some great <a title="Overlay Extras at the YUI Gallery" target="_blank" href="http://yuilibrary.com/gallery/show/overlay-extras">plugins for the overlay</a>.</p>
+<h3>In Conclusion</h3>
+<p>I hope this has helped show how useful and versatile the overlay control is. As I mentioned when I started, I think the Overlay is a great example of just how powerful YUI is. After all the overlay is 1 line of code</p>
+<p><code>Y.Overlay = Y.Base.create("overlay", Y.Widget, [Y.WidgetStdMod, Y.WidgetPosition, Y.WidgetStack, Y.WidgetPositionAlign, Y.WidgetPositionConstrain]);</code></p>
+<p>That&#8217;s it, simply <a title="Wikipedia definition of Mixin" target="_blank" href="http://en.wikipedia.org/wiki/Mixin">mixing in</a> a number of different small classes you can get a lot of functionality</p>
                     </div>
                 </section>
             </div>

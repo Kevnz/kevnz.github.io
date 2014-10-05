@@ -7,9 +7,9 @@
 
     <title>Kevin Isom &ndash; </title>
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
-    <link rel="stylesheet" href="css/layouts/blog.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/grids-responsive.css">
+    <link rel="stylesheet" href="/css/blog.css">
 </head>
 <body>
 
@@ -36,12 +36,12 @@
         <div>
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
-                <h1 class="content-subhead">Pinned Post</h1>
+                <h1 class="content-subhead">Most Recent Post</h1>
 
                 <!-- A single blog post -->
                 <section class="post">
                     <header class="post-header">
-                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="img/common/kevin-avatar.png">
+                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="/img/kevin-avatar.png">
 
                         <h2 class="post-title">NPM Packages on Windows</h2>
 
@@ -51,12 +51,12 @@
                     </header>
 
                     <div class="post-description">
-                        &lt;p&gt;With all of the progress on getting &lt;a title=&quot;node.js website&quot; target=&quot;_blank&quot; href=&quot;http://nodejs.org/&quot;&gt;node.js&lt;/a&gt; to run on windows people may want to start writing complex apps with it. Well at least apps that use more than what&amp;#8217;s shipped with it. Now on Linux or OS X that means using &lt;a title=&quot;node package manager&quot; target=&quot;_blank&quot; href=&quot;http://npmjs.org/&quot;&gt;npm&lt;/a&gt;. Unfortunately npm is still a long way off for windows by the looks of things (it currently uses symlinks and Windows XP doesn&amp;#8217;t have symlinks) but you can still use all of those packages at npmjs.org it just means more work.&lt;/p&gt;
-&lt;p&gt;First find a package you will want to use. In this case I want to write a new web app with &lt;a title=&quot;Express.js web framework&quot; target=&quot;_blank&quot; href=&quot;http://expressjs.com/&quot;&gt;express.js&lt;/a&gt;. Express.js is a web framework for node and is similar to &lt;a title=&quot;Sinatra web framework for ruby&quot; target=&quot;_blank&quot; href=&quot;http://www.sinatrarb.com/&quot;&gt;sinatra&lt;/a&gt; for ruby. You can use the search functionality available on the npm site to find the &lt;a title=&quot;express package&quot; target=&quot;_blank&quot; href=&quot;http://search.npmjs.org/#/express&quot;&gt;express package&lt;/a&gt;. You will see the description, version, dependencies, repository, and node engines listed. Take note of the dependencies, you will have to repeat these steps for all the dependencies. Download the latest tgz file (at the time I&amp;#8217;m writing this, it&amp;#8217;s 2.4.6) Unpack the file and rename the folder from package to express. Repeat that for &lt;a title=&quot;connect middleware for node&quot; target=&quot;_blank&quot; href=&quot;http://search.npmjs.org/#/connect&quot;&gt;connect&lt;/a&gt;, &lt;a title=&quot;qs for node.js&quot; target=&quot;_blank&quot; href=&quot;http://search.npmjs.org/#/qs&quot;&gt;qs&lt;/a&gt;, and &lt;a title=&quot;mime for node.js&quot; target=&quot;_blank&quot; href=&quot;http://search.npmjs.org/#/mime&quot;&gt;mime&lt;/a&gt;, as well as jade (or any other template engine you want to use.&lt;/p&gt;
-&lt;p&gt;After downloading and renaming all the packages, copy them to a folder called &lt;em&gt;node_modules&lt;/em&gt; in your project. You will want to make sure you add the folder to your ignore list for your version control. Unless you&amp;#8217;re going to deploy to a windows machine with &lt;a title=&quot;IISNode on Github&quot; target=&quot;_blank&quot; href=&quot;https://github.com/tjanczuk/iisnode&quot;&gt;IISNode&lt;/a&gt; as solutions like Heroku and Nodester will install your dependencies for you.&lt;/p&gt;
-&lt;p&gt;Finally you will want to create a &lt;a title=&quot;Details for packages from the commonjs spec&quot; target=&quot;_blank&quot; href=&quot;http://wiki.commonjs.org/wiki/Packages/1.1&quot;&gt;package.json&lt;/a&gt; and list your dependencies so when you deploy or someone wants to use your app they can use npm to install the dependencies and run your app.&lt;/p&gt;
-&lt;p&gt;So you should end up with a project directory that looks something like this&lt;br/&gt;root&lt;br/&gt;|&amp;#8212;node_modules&lt;br/&gt;|  |&amp;#8212;connect&lt;br/&gt;|  |&amp;#8212;express&lt;br/&gt;|  |&amp;#8212;jade&lt;br/&gt;|  |&amp;#8212;mime&lt;br/&gt;|  |&amp;#8212;qs&lt;br/&gt;|&amp;#8212;public&lt;br/&gt;|&amp;#8212;views&lt;br/&gt;|&amp;#8212;app.js&lt;br/&gt;|&amp;#8212;package.json &lt;/p&gt;
-&lt;p&gt;Hopefully this all makes sense, and here&amp;#8217;s hoping that npm will be coming to windows in the near future. So get going and write some node apps.&lt;/p&gt;
+                        <p>With all of the progress on getting <a title="node.js website" target="_blank" href="http://nodejs.org/">node.js</a> to run on windows people may want to start writing complex apps with it. Well at least apps that use more than what&#8217;s shipped with it. Now on Linux or OS X that means using <a title="node package manager" target="_blank" href="http://npmjs.org/">npm</a>. Unfortunately npm is still a long way off for windows by the looks of things (it currently uses symlinks and Windows XP doesn&#8217;t have symlinks) but you can still use all of those packages at npmjs.org it just means more work.</p>
+<p>First find a package you will want to use. In this case I want to write a new web app with <a title="Express.js web framework" target="_blank" href="http://expressjs.com/">express.js</a>. Express.js is a web framework for node and is similar to <a title="Sinatra web framework for ruby" target="_blank" href="http://www.sinatrarb.com/">sinatra</a> for ruby. You can use the search functionality available on the npm site to find the <a title="express package" target="_blank" href="http://search.npmjs.org/#/express">express package</a>. You will see the description, version, dependencies, repository, and node engines listed. Take note of the dependencies, you will have to repeat these steps for all the dependencies. Download the latest tgz file (at the time I&#8217;m writing this, it&#8217;s 2.4.6) Unpack the file and rename the folder from package to express. Repeat that for <a title="connect middleware for node" target="_blank" href="http://search.npmjs.org/#/connect">connect</a>, <a title="qs for node.js" target="_blank" href="http://search.npmjs.org/#/qs">qs</a>, and <a title="mime for node.js" target="_blank" href="http://search.npmjs.org/#/mime">mime</a>, as well as jade (or any other template engine you want to use.</p>
+<p>After downloading and renaming all the packages, copy them to a folder called <em>node_modules</em> in your project. You will want to make sure you add the folder to your ignore list for your version control. Unless you&#8217;re going to deploy to a windows machine with <a title="IISNode on Github" target="_blank" href="https://github.com/tjanczuk/iisnode">IISNode</a> as solutions like Heroku and Nodester will install your dependencies for you.</p>
+<p>Finally you will want to create a <a title="Details for packages from the commonjs spec" target="_blank" href="http://wiki.commonjs.org/wiki/Packages/1.1">package.json</a> and list your dependencies so when you deploy or someone wants to use your app they can use npm to install the dependencies and run your app.</p>
+<p>So you should end up with a project directory that looks something like this<br/>root<br/>|&#8212;node_modules<br/>|  |&#8212;connect<br/>|  |&#8212;express<br/>|  |&#8212;jade<br/>|  |&#8212;mime<br/>|  |&#8212;qs<br/>|&#8212;public<br/>|&#8212;views<br/>|&#8212;app.js<br/>|&#8212;package.json </p>
+<p>Hopefully this all makes sense, and here&#8217;s hoping that npm will be coming to windows in the near future. So get going and write some node apps.</p>
                     </div>
                 </section>
             </div>

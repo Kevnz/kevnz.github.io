@@ -7,9 +7,9 @@
 
     <title>Kevin Isom &ndash; </title>
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
-    <link rel="stylesheet" href="css/layouts/blog.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/grids-responsive.css">
+    <link rel="stylesheet" href="/css/blog.css">
 </head>
 <body>
 
@@ -36,12 +36,12 @@
         <div>
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
-                <h1 class="content-subhead">Pinned Post</h1>
+                <h1 class="content-subhead">Most Recent Post</h1>
 
                 <!-- A single blog post -->
                 <section class="post">
                     <header class="post-header">
-                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="img/common/kevin-avatar.png">
+                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="/img/kevin-avatar.png">
 
                         <h2 class="post-title">Composing your web apps</h2>
 
@@ -51,12 +51,12 @@
                     </header>
 
                     <div class="post-description">
-                        &lt;p&gt;I&amp;#8217;ve been busy lately building Single Page Apps using the YUI App Framework and one thing I found is that when an app hits a certain size the actual Application container gets messy pretty quick. You spend all this time separating out the pieces of your app into views and models, but then the &amp;#8220;glue&amp;#8221; of the routes and event handling you end up with a massive &amp;#8220;mess&amp;#8221; of code. Even well structured code becomes difficult to maintain when it starts to creep up past a few hundred lines of well formatted code. So what can you do?&lt;/p&gt;
-&lt;p&gt;My first pass was just trying to mix in multiple apps.&lt;/p&gt;
-&lt;script src=&quot;https://gist.github.com/Kevnz/6521348.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;p&gt;This did not work. I realized that since each module has a views property they are getting overwritten, not merged, and the same was happening with the routes attribute as well. So that&amp;#8217;s no good. So I considered extending App with something like .addSubApp() but that had it&amp;#8217;s own problems.&lt;/p&gt;
-&lt;p&gt;What&amp;#8217;s a dev todo? I really wanted the create syntax because that expressed what I wanted. Plus, I love mixing in modules, it allows for a lot of creation with little code. So I had a browse of what the YUI team are &lt;a href=&quot;http://yuilibrary.com/yui/docs/api/files/base_js_BaseBuild.js.html#l329&quot; target=&quot;_blank&quot;&gt;doing&lt;/a&gt; and decided that I would have to do something with that.&lt;/p&gt;
-&lt;p&gt;What I did&lt;/p&gt;
-&lt;script src=&quot;https://gist.github.com/Kevnz/6521528.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;p&gt;I took the core of the build method in base-built and added specific checks for views and routes and merged them together. This &lt;a href=&quot;https://github.com/Kevnz/yui-app-extensions/blob/master/src/apps/js/app-create.js&quot; target=&quot;_blank&quot;&gt;module&lt;/a&gt; is at my YUI App Extensions &lt;a href=&quot;https://github.com/Kevnz/yui-app-extensions&quot; target=&quot;_blank&quot;&gt;repository&lt;/a&gt; on &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt; and I am happy to take comments or pull requests. I also have several other modules at that repo that are useful for App Development as well.&lt;/p&gt;
+                        <p>I&#8217;ve been busy lately building Single Page Apps using the YUI App Framework and one thing I found is that when an app hits a certain size the actual Application container gets messy pretty quick. You spend all this time separating out the pieces of your app into views and models, but then the &#8220;glue&#8221; of the routes and event handling you end up with a massive &#8220;mess&#8221; of code. Even well structured code becomes difficult to maintain when it starts to creep up past a few hundred lines of well formatted code. So what can you do?</p>
+<p>My first pass was just trying to mix in multiple apps.</p>
+<script src="https://gist.github.com/Kevnz/6521348.js" type="text/javascript"></script><p>This did not work. I realized that since each module has a views property they are getting overwritten, not merged, and the same was happening with the routes attribute as well. So that&#8217;s no good. So I considered extending App with something like .addSubApp() but that had it&#8217;s own problems.</p>
+<p>What&#8217;s a dev todo? I really wanted the create syntax because that expressed what I wanted. Plus, I love mixing in modules, it allows for a lot of creation with little code. So I had a browse of what the YUI team are <a href="http://yuilibrary.com/yui/docs/api/files/base_js_BaseBuild.js.html#l329" target="_blank">doing</a> and decided that I would have to do something with that.</p>
+<p>What I did</p>
+<script src="https://gist.github.com/Kevnz/6521528.js" type="text/javascript"></script><p>I took the core of the build method in base-built and added specific checks for views and routes and merged them together. This <a href="https://github.com/Kevnz/yui-app-extensions/blob/master/src/apps/js/app-create.js" target="_blank">module</a> is at my YUI App Extensions <a href="https://github.com/Kevnz/yui-app-extensions" target="_blank">repository</a> on <a href="https://github.com/" target="_blank">github</a> and I am happy to take comments or pull requests. I also have several other modules at that repo that are useful for App Development as well.</p>
                     </div>
                 </section>
             </div>
