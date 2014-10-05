@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Kevin Isom &ndash; </title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
+    <link rel="stylesheet" href="css/layouts/blog.css">
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Kevin Isom</h1>
+            <h2 class="brand-tagline">I'm a software developer living in Auckland, New Zealand. Originally from a sleepy little Southern Town in the USA, I moved to New Zealand in the last century and have become a husband and father.</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://twitter.com/kev_nz">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://github.com/kevnz">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="img/common/kevin-avatar.png">
+
+                        <h2 class="post-title">Using and abusing YUI Models and ModelSync.Rest</h2>
+
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Kevin Isom</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        &lt;p&gt;I have been building some apps lately with the &lt;a href=&quot;http://yuilibrary.com/yui/docs/app/&quot; target=&quot;_blank&quot;&gt;YUI App Framework&lt;/a&gt; a JavaScript MV* framework built with YUI. One of the enhancements of the &lt;a href=&quot;http://yuilibrary.com/yui/docs/model/&quot; target=&quot;_blank&quot;&gt;Model&lt;/a&gt; is the ModelSync capabilities provided by the &lt;a href=&quot;http://yuilibrary.com/yui/docs/model/#restful-xhr&quot; target=&quot;_blank&quot;&gt;REST&lt;/a&gt; module. See the example below.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/Kevnz/6333147.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;p&gt;However it is simple enough to add additional url calls. By specifying the url property of the model. The sync module will take the model attributes and use Y.Lang.sub to process the url property. So what does that mean? Individual methods can set the url property and then make a request to retrieve the data at that endpoint.&lt;/p&gt;
+&lt;p&gt;Depending on your purposes and url configuration you will want to either set the url property to null after the load is complete or update the url to a default configuration&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/Kevnz/6333330.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;p&gt;This also works with the &lt;a href=&quot;http://yuilibrary.com/yui/docs/model-list/&quot; target=&quot;_blank&quot;&gt;ModelList&lt;/a&gt; as well so you can craft custom queries to retrieve data to populate the list.&lt;/p&gt;
+&lt;p&gt;Extending models and model lists this way is really simple and can help extend your application.I was really pleased to see that this just works out of the box and required no additional changes to the Sync layer.&lt;/p&gt;
+&lt;p&gt;The next post I&amp;#8217;ll be doing on the YUI App Framework will be creating sub apps and modularizing your app to allow for greater composability and better maintenance.&lt;/p&gt;
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://kevinisom.info/">About</a></li>
+                        <li><a href="https://twitter.com/kev_nz/">Twitter</a></li>
+                        <li><a href="https://github.com/kevnz/">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

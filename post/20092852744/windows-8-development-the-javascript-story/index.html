@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Kevin Isom &ndash; </title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
+    <link rel="stylesheet" href="css/layouts/blog.css">
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Kevin Isom</h1>
+            <h2 class="brand-tagline">I'm a software developer living in Auckland, New Zealand. Originally from a sleepy little Southern Town in the USA, I moved to New Zealand in the last century and have become a husband and father.</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://twitter.com/kev_nz">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://github.com/kevnz">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="img/common/kevin-avatar.png">
+
+                        <h2 class="post-title">Windows 8 Development, The JavaScript Story</h2>
+
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Kevin Isom</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        &lt;p&gt;Following my last &lt;a href=&quot;http://kevinisom.info/post/19909888207/a-weekend-with-windows-8&quot; title=&quot;A Weekend With Windows 8&quot; target=&quot;_self&quot;&gt;post&lt;/a&gt; on my time with Windows 8, I&amp;#8217;d like to write about actually developing for it. &lt;/p&gt;
+&lt;p&gt;My day to day development happens on a MacBook Pro with OS X Lion, using TextMate for writing js. I use the &lt;a href=&quot;http://yuilibrary.com/&quot; title=&quot;YUI is a free, open source JavaScript and CSS framework for building richly interactive web applications.&quot; target=&quot;_blank&quot;&gt;YUI Library&lt;/a&gt; as my go to front end library and I use &lt;a href=&quot;http://nodejs.org/&quot; title=&quot;Node.JS &quot; target=&quot;_blank&quot;&gt;node.js&lt;/a&gt; both for development tools and when I do non work related development. So yeah, I love JavaScript. So when Microsoft announced that HTML/JavaScript was a first class option for writing apps in Windows 8 it got my interest. (&lt;em&gt;Full disclosure, I previously worked with .Net, and before that with ASP, so I know the MS stack&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Since I&amp;#8217;ve covered my thoughts on Windows I&amp;#8217;m going to dive straight to Visual Studio 11. Now I&amp;#8217;m no stranger to VS, and have used every version since VS 6. But MS has decided to introduce Metro elements into VS. This caused much wailing and gnashing of teeth. However, when I use VS I turn off all the toolbars and all the panels but the solution explorer. As a text editor on Windows, Visual Studio is hands down awesome. I&amp;#8217;ve lamented on more than one occasion that I wish MS would strip it down and release it as a text editor, the font rendering in Visual Studio now is excellent and nothing comes close to it on Windows. The only thing that I find the least bit annoying is the ALLCAPS for Panels, but if they want it to say SOLUTION EXPLORER instead of Solution Explorer, I&amp;#8217;ll deal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;File&lt;/strong&gt;, &lt;strong&gt;New&lt;/strong&gt;, &lt;strong&gt;Project&lt;/strong&gt;. You are presented a list of templates for JavaScript apps and MS has done a nice job of giving you starting points for various types of Metro apps. However I didn&amp;#8217;t want any of those, I had decided to make game, and there was no templates for that.&lt;/p&gt;
+&lt;p&gt;After starting with a blank template I then proceeded to gather up some libs to use. As mentioned before I love YUI so grabbed it and brought it into my project. Reference it on the page, and what happpens? Intellisense. Now, it wasn&amp;#8217;t full on intellisense with full descriptions, but I got code completion for code I didn&amp;#8217;t expect. I was a little thing, but it was a nice touch. So the YUI code worked with no problem. But then I was only doing some DOM work to start with, now it&amp;#8217;s time to really start working on the code.&lt;/p&gt;
+&lt;p&gt;Now as interesting as it would be to write a game from scratch I only had a weekend, so I decided to use &lt;a href=&quot;http://craftyjs.com/&quot; title=&quot;Crafy.js JavaScript Game Library&quot; target=&quot;_blank&quot;&gt;Crafy.js&lt;/a&gt;, a JavaScript game library. Everything just worked. After I started noticing a bit of a slowdown when lot&amp;#8217;s of things were happening on screen I got worried, was I doing something wrong? Was the idea of writing a fast JavaScript game really a pipe dream? Or was it something else? Well it turns out that I started off using the DOM too much, so I then moved to pure canvas and the game was wicked fast (and I continued to get it fast as I learned how to tune the code)  &lt;/p&gt;
+&lt;p&gt;I ran the game in the lastest versions of Chrome and FireFox and was disappointed, especially with audio. I had a number of sounds going at once, as well as background music, shooting sounds, explosions all from events happening on the game and not once did I have a problem with Win8 playing them. Chrome just stopped playing all sound after a few seconds and FireFox only played some of the sounds (though those sounds never stopped and was a nicer degrade over Chrome) &lt;/p&gt;
+&lt;p&gt;Never once over the entire weekend did I feel the default tools or experience got in my way. I think that is worth repeating, the tools and experience never got in my way. Something I&amp;#8217;ve not had happen when developing for other platforms. VS was nearly flawless and the debugging experience was nice. I did not however dig deep into the libraries included with Win8, I wanted to see how Win8 HTML/JS apps played with standards. Microsoft could have taken the route of having all the &amp;#8220;goodness&amp;#8221; hanging off of the WinRT libraries, but instead they have used the HTML5 specs for audio, localStorage, web workers and many other advanced bits. This was especially pleasing considering the past history of embrace and extend. &lt;/p&gt;
+&lt;p&gt;My verdict is Microsoft has a winner on it&amp;#8217;s hands, at least technically, public relations is a whole different story. But there is a lot to offer a JavaScript developer. I have been continuing to develop my game and hope to have it in the store when it&amp;#8217;s ready.&lt;/p&gt;
+&lt;p&gt;I think if you currently make web apps, especially if you want to make html5/javascript games then you owe it to yourself to give Win8 development a go.*&lt;/p&gt;
+&lt;p&gt;I will be posting a follow up to this on the generic developer experience as well. That should be in the next few days.&lt;/p&gt;
+&lt;p&gt;* If you install Win8 please install onto machine not a VM, I found that Virtualizing Windows 8 was an unpleasant experience and everything was almost unusable from Virtual Box on my MacBook Pro&lt;/p&gt;
+&lt;p&gt;&lt;iframe frameborder=&quot;0&quot; height=&quot;239px&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;https://skydrive.live.com/embed?cid=7E2D286DB120424E&amp;amp;resid=7E2D286DB120424E%21617&amp;amp;authkey=AKgpzk8IKaTqcOA&quot; title=&quot;Preview&quot; width=&quot;320px&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://kevinisom.info/">About</a></li>
+                        <li><a href="https://twitter.com/kev_nz/">Twitter</a></li>
+                        <li><a href="https://github.com/kevnz/">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

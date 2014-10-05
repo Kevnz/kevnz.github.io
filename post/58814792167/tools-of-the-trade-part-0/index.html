@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Kevin Isom &ndash; </title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
+    <link rel="stylesheet" href="css/layouts/blog.css">
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Kevin Isom</h1>
+            <h2 class="brand-tagline">I'm a software developer living in Auckland, New Zealand. Originally from a sleepy little Southern Town in the USA, I moved to New Zealand in the last century and have become a husband and father.</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://twitter.com/kev_nz">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://github.com/kevnz">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="img/common/kevin-avatar.png">
+
+                        <h2 class="post-title">Tools of the trade Part 0</h2>
+
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Kevin Isom</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        &lt;p&gt;I am frequently asked why I don&amp;#8217;t choose lib X, or why I choose tool Z so I thought I&amp;#8217;d go into the tools I use and a little of why I don&amp;#8217;t use others. So I&amp;#8217;m going to have a go at explaining just that. First I want to get some technical details out of the way. &lt;/p&gt;
+&lt;p&gt;I use Windows for work, mostly because I have to use Windows for work. I&amp;#8217;d prefer to do my job on a Mac, but considering I work in a .Net shop, that is pretty much out of the question. Now Windows is often treated like an outcast and often neglected when it comes to tooling. But that has been changing.&lt;/p&gt;
+&lt;h2&gt;First up&lt;/h2&gt;
+&lt;p&gt;The Command Line. Sorry Windows devs, but the command line is really useful, even in Windows, or at least &lt;a href=&quot;http://technet.microsoft.com/en-US/scriptcenter/dd742419.aspx&quot; target=&quot;_blank&quot;&gt;Powershell&lt;/a&gt; is. I mean it&amp;#8217;s no bash, but it&amp;#8217;ll do.&lt;/p&gt;
+&lt;h2&gt;Chocolatey.&lt;/h2&gt;
+&lt;p&gt;From the site &amp;#8220;Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind&amp;#8221;. This has been a great tool. I now have a script that takes a machine from zero to fully configured without me having to do little more than running a powershell command. From here on out I&amp;#8217;ll be referencing installing apps via chocolatey.&lt;/p&gt;
+&lt;h2&gt;ConEmu&lt;/h2&gt;
+&lt;p&gt;The default console app in Windows is horrific, actually I don&amp;#8217;t know if a word exists to describe how horrible it actually is. This is one of those area&amp;#8217;s that OS X just kills Windows. However &lt;a href=&quot;https://code.google.com/p/conemu-maximus5/&quot; target=&quot;_blank&quot;&gt;ConEmu&lt;/a&gt; provides a better console window to use. It is a console emulator that provides tabs, different consoles and even split screens. Never ever use the default windows console again.&lt;/p&gt;
+&lt;p&gt;Install it with  C:\cinst ConEmu&lt;/p&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;p&gt;I prefer to use Git for my source control needs. I tend to avoid using a GUI for that so I just install Git and then Posh-Git and use Git from Powershell, not the cygwin bash shell Git installs. Post-Git gives you details about the repo that you are in, what branch you are on, uncommited changes and the like&lt;/p&gt;
+&lt;p&gt;Install Git C:\cinst Git&lt;br/&gt;Install Posh-Git C:\cinst postgit&lt;/p&gt;
+&lt;p&gt;Installing Posh-Git will install Git for you, yay Chocolatey. You can install something like Github for Windows or Atlassian SourceTree but you don&amp;#8217;t need them.&lt;/p&gt;
+&lt;p&gt;There you have it. Some useful tools that I hope to be building on in future posts. I know it seems a little scary all this talk of the command line but remember what Walter &lt;a href=&quot;http://24.media.tumblr.com/81880e29e3e6cfdf4223d4ebc0374348/tumblr_mrtaqfZSBO1qzcgizo1_500.png&quot; target=&quot;_blank&quot;&gt;says&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;OS X&lt;/h2&gt;
+&lt;p&gt;There are a few tools that are helpful.&lt;/p&gt;
+&lt;h2&gt;Homebrew&lt;/h2&gt;
+&lt;p&gt;Like Chocolately, Homebrew is a package manager for OS X. It lets you download and install apps. How to &lt;a href=&quot;https://github.com/mxcl/homebrew/wiki/Installation&quot; target=&quot;_blank&quot;&gt;install Homebrew&lt;/a&gt; from the wiki&lt;/p&gt;
+&lt;h2&gt;ITerm 2&lt;/h2&gt;
+&lt;p&gt;While the default terminal in OS X isn&amp;#8217;t bad iTerm 2 is great. Split panes, hotkey support, and many more features. Download from the &lt;a href=&quot;http://www.iterm2.com/&quot; target=&quot;_blank&quot;&gt;site&lt;/a&gt;. &lt;/p&gt;
+&lt;h2&gt;Oh-My-Zsh&lt;/h2&gt;
+&lt;p&gt;Oh-My-Zsh is framework for managing the configuration for zshell. Oh-My-Zsh allows for different configurations that show many things from that command prompt. Install it and have a play. Oh-My-Zsh &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot; target=&quot;_blank&quot;&gt;github repo&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;p&gt;As above install with homebrew $ brew install git&lt;/p&gt;
+&lt;h2&gt;In conclusion&lt;/h2&gt;
+&lt;p&gt;These are foundation tools that I will build off of in future posts.&lt;/p&gt;
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://kevinisom.info/">About</a></li>
+                        <li><a href="https://twitter.com/kev_nz/">Twitter</a></li>
+                        <li><a href="https://github.com/kevnz/">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

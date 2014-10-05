@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Kevin Isom &ndash; </title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
+    <link rel="stylesheet" href="css/layouts/blog.css">
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Kevin Isom</h1>
+            <h2 class="brand-tagline">I'm a software developer living in Auckland, New Zealand. Originally from a sleepy little Southern Town in the USA, I moved to New Zealand in the last century and have become a husband and father.</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://twitter.com/kev_nz">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://github.com/kevnz">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Kevin Isom&#x27;s avatar" height="48" width="48" src="img/common/kevin-avatar.png">
+
+                        <h2 class="post-title">Tools of the Trade: Part 1</h2>
+
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Kevin Isom</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        &lt;p&gt;After the initial &lt;a href=&quot;http://kevinisom.info/post/58814792167/tools-of-the-trade-part-0&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt; I reckon it&amp;#8217;s time to get started with this series. So the first tool on my list? &lt;/p&gt;
+&lt;h2&gt;Node.js&lt;/h2&gt;
+&lt;p&gt;Now I&amp;#8217;m not talking about using node as a web server or anything like that. (That will come later) I am talking about using it for tooling. Repetitive tasks should be automated. Automating those tasks using node gives you the advantage of being able to easily use those scripts on any platform. &lt;/p&gt;
+&lt;p&gt;For instance, you have a way you like to setup your projects so you write up a script to do just that. If you are on a mac you could write a bash script, on windows maybe powershell. But that isn&amp;#8217;t very portable. you can do it in node, put it up on npm and you can use that script anywhere and everywhere. &lt;/p&gt;
+&lt;p&gt;Installing Node and it&amp;#8217;s package manager NPM is easy. Now for most installs I will recommend using chocolatey and brew (see part 0) however at one point npm wasn&amp;#8217;t being installed correctly on the Mac. So head over to the &lt;a href=&quot;http://nodejs.org/&quot; target=&quot;_blank&quot;&gt;Node.js site&lt;/a&gt; and download the installer or via chocolatey&lt;br/&gt;&lt;span&gt;C:&amp;#62; cinst nodejs.install&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You may want to install either Visual C++ 2010 Express edition if you are on Windows, or XCode  if you are on a Mac. Even if you have Visual Studio 2012 installed VC++ 2010 is still required. These tools allow you to build native node modules. Often modules that talk to other systems like databases often require native code to work.&lt;/p&gt;
+&lt;p&gt;Next tool&lt;/p&gt;
+&lt;h2&gt;Grunt - The JavaScript Task Runner&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://gruntjs.com/&quot; target=&quot;_blank&quot;&gt;Grunt&lt;/a&gt; is a task runner that has plenty of available plugins for automating development tasks and is easy to write your own tasks with. You don&amp;#8217;t have to develop on Node to use Grunt in your build process. Any build process that allows you to calls to the command line is capable of using grunt. I have it running in Visual Studio projects where it will even fail a build if something does not work.&lt;/p&gt;
+&lt;p&gt;Install Grunt from the command line&lt;/p&gt;
+&lt;p&gt;npm install -g grunt-cli&lt;/p&gt;
+&lt;p&gt;This will tell npm to download the grunt command line module and install it globally. Next go to the root of your project and run&lt;/p&gt;
+&lt;p&gt;npm init&lt;/p&gt;
+&lt;p&gt;This will ask you a few questions and create a package.json file. This file will hold your dependencies (among other purposes) &lt;/p&gt;
+&lt;p&gt;If you want a quick win to improve your JavaScript development add this grunt file to your project.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/Kevnz/6332153.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;p&gt;Then just install the grunt contrib jshint module&lt;/p&gt;
+&lt;p&gt;npm install grunt-contrib-jshint &amp;#8212;save-dev&lt;/p&gt;
+&lt;p&gt;Then when you run grunt from the command line your JavaScript files will be linted using JSHint.&lt;/p&gt;
+&lt;p&gt;I will be building on that grunt file as this series progresses.&lt;/p&gt;
+&lt;h2&gt;In Conclusion&lt;/h2&gt;
+&lt;p&gt;Node and Grunt are great tools to improve your Front End Development no matter what platform you target for development or deployment.&lt;/p&gt;
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://kevinisom.info/">About</a></li>
+                        <li><a href="https://twitter.com/kev_nz/">Twitter</a></li>
+                        <li><a href="https://github.com/kevnz/">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -14,9 +14,10 @@ var path = require('path');
 gulp.task('blog-posts', function () {
     var postTemplate = fs.readFileSync('./blog.ejs', {encoding:'utf8'});
     fs.mkdirSync(path.join(__dirname,'/post/'));
-    return gulp.src('./posts/**/**/*.md')
+    return gulp.src(['./posts/2012/**/*.md','./posts/2013/**/*.md', './posts/2011/**/*.md', './posts/2010/**/*.md', './posts/2010/**/*.md'])
         .pipe(tap(function (file, t) {
             //console.log(file.contents);
+            console.log(file.path)
             var fullPost = decoder.write(file.contents);
 
             var lineReader = require('line-reader');
@@ -29,14 +30,14 @@ gulp.task('blog-posts', function () {
 
                 fs.mkdirSync(path.join(__dirname, '/post/', postData.id.toString())); 
                 fs.mkdirSync(fpath);
-                console.log(fpath);
+                //console.log(fpath);
                 var rendered = ejs.render(postTemplate, {post: postData});
                 //console.log(JSON.parse(line.substring(4)).body);
                 //console.log(rendered);
                 
                 fs.writeFile(fpath + '/index.html', rendered, function (err) {
                   if (err) throw err;
-                  console.log('It\'s saved!');
+                  //console.log('It\'s saved!');
                 });
               }
               // do whatever you want with line...
