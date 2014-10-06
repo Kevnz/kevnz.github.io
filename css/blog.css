@@ -42,6 +42,9 @@ h3 {
 .brand-tagline {
     margin: 0;
 }
+h1.brand-title {
+    color: #fff;
+}
 .brand-title {
     text-transform: uppercase;
 }
