@@ -16,6 +16,7 @@
     "url": "https://github.com/Kevnz/kevnz.github.io/issues"
   },
   "devDependencies": {
+    "daylight": "^0.2.3",
     "delete": "^0.1.5",
     "ejs": "^1.0.0",
     "es6ify": "^1.4.0",
