@@ -13,7 +13,7 @@ var fs = require('fs');
 var path = require('path');
 
 gulp.task('blog-posts', function () {
-    var postTemplate = fs.readFileSync('./blog.ejs', {encoding:'utf8'});
+    var postTemplate = fs.readFileSync('./post.ejs', {encoding:'utf8'});
     fs.mkdirSync(path.join(__dirname,'/post/'));
     return gulp.src(['./posts/2012/**/*.md','./posts/2013/**/*.md', './posts/2011/**/*.md', './posts/2010/**/*.md', './posts/2010/**/*.md'])
         .pipe(tap(function (file, t) {
@@ -52,7 +52,7 @@ gulp.task('blog-posts', function () {
 });
 
 gulp.task('purge', function (callback) {
-    del.sync('./dist')
+    del.sync('./post')
     callback(null);
  
 });  
