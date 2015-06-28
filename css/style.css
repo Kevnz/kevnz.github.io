@@ -1884,7 +1884,10 @@ a.kev-button-primary {
     .content-subhead i {
         margin-right: 7px;
     }
-
+.content-subhead h3 a {
+    color: #1f8dd6!important;
+    text-decoration: none;
+}
 /* This is the class used for the dark-background areas. */
 .ribbon {
     background: #2d3e50;
