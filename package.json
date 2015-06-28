@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "posts": "gulp blog-posts",
-    "preposts": "gulp purge"git
+    "preposts": "gulp purge"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "gulp-replace": "^0.4.0",
     "gulp-tap": "^0.1.3",
     "line-reader": "^0.2.4",
+    "moment": "^2.10.3",
     "yaml": "^0.2.3",
     "yaml2": "^0.3.4"
   },

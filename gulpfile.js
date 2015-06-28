@@ -8,10 +8,10 @@ var tap = require('gulp-tap');
 var StringDecoder = require('string_decoder').StringDecoder;
 var decoder = new StringDecoder('utf8');
 var ejs = require('ejs');
-
+var moment = require('moment');
 var fs = require('fs');
 var path = require('path');
-
+var posts = [];
 gulp.task('blog-posts', function () {
     var postTemplate = fs.readFileSync('./post.ejs', {encoding:'utf8'});
     fs.mkdirSync(path.join(__dirname,'/post/'));
@@ -27,6 +27,7 @@ gulp.task('blog-posts', function () {
               //console.log(line);
               if(line.indexOf('raw:') > -1) {
                 var postData = JSON.parse(line.substring(4));
+                posts.push(postData);
                 var fpath = path.join(__dirname, '/post/', postData.id.toString(), postData.slug);
 
                 fs.mkdirSync(path.join(__dirname, '/post/', postData.id.toString())); 
@@ -47,6 +48,26 @@ gulp.task('blog-posts', function () {
               }
             });
         }))
+
+
+});
+gulp.task('list-posts', ['blog-posts'], function (cb) {
+    var postTemplate = fs.readFileSync('./post.ejs', {encoding:'utf8'});
+    
+          console.log(posts.length);
+          var mapped = posts.map(function(post) {
+            return { timestamp: post.timestamp, title: post.title, date: post.date }; 
+          });
+          mapped.sort( function (a, b) {
+            
+            return moment(a.date,'YYYY-MM-DD hh:mm:ss') < moment(b.date,'YYYY-MM-DD hh:mm:ss');
+          });
+          console.log(mapped);
+          fs.writeFile(path.join(__dirname,'meta.json'), JSON.stringify(mapped), function (err) {
+            console.log(err);
+            cb(null);
+          });
+
 
 
 });
